@@ -1,0 +1,21 @@
+#################################################################################################################
+Esse app esta sendo construido com intuito de ajudar a empresa HiLink em agilizar alguns processos de manutenção
+fornecendo dados e backup dos hosts que estao offs para serem configurados rapidamente.
+#################################################################################################################
+Author : Jeyson Hilario
+EMail: jeyson_hilario@hotmail.com
+##########################################################
+Version 0.1
+* Criado Arquivo botHiLink - Para envio dos dados pelo telegram
+* Criado Arquivo zabbix - Para obter os dados dos hosts para envio
+* Criado o Arquivo config - Para Guardar algumas constantes que podem ser mudadas caso outros pessoas venha a utilizar.
+
+botHiLink.py
+    Funcao que responde toda mensagem enviada para o bot, e respondendo com a lista de funcoes adicionadas
+    Funcao HostDown que envia todos os hosts que estao down no sistema da HiLink
+
+zabbix.py
+    Funções que retornam quando um hosts está online ou offline.
+
+config.py
+    Variaveis de configuração do progama
